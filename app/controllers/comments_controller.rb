@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
       @prototype = comment.prototype
       @comments = @prototype.comments.includes(:user)
       @comment = comment
-      render template: "prototypes/show"
+      render "prototypes/show"
     end
   end
 
